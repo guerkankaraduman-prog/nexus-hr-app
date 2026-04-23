@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from “react”;
+import { useState, useEffect, useRef } from "react";
 
 const API_CALL = async (systemPrompt, userPrompt) => {
 const response = await fetch(“https://api.anthropic.com/v1/messages”, {
