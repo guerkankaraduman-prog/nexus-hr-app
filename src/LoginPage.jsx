@@ -1,15 +1,15 @@
-import { useState } from “react”;
+import { useState } from "react";
 
 export default function LoginPage({ onLogin }) {
-const [email, setEmail] = useState(””);
-const [password, setPassword] = useState(””);
-const [error, setError] = useState(””);
+const [email, setEmail] = useState("");
+const [password, setPassword] = useState("");
+const [error, setError] = useState("");
 const [loading, setLoading] = useState(false);
 
 const handleSubmit = async () => {
-setError(””);
+setError("");
 if (!email || password.length < 4) {
-setError(“Bitte E-Mail und mind. 4 Zeichen Passwort eingeben.”);
+setError("Bitte E-Mail und mind. 4 Zeichen Passwort eingeben.");
 return;
 }
 setLoading(true);
@@ -20,11 +20,11 @@ if (onLogin) onLogin({ email });
 
 return (
 <div style={{
-minHeight: “100vh”,
-background: “linear-gradient(135deg, #0f1729 0%, #1a2744 50%, #0f1729 100%)”,
-display: “flex”, alignItems: “center”, justifyContent: “center”,
-fontFamily: “‘DM Sans’, sans-serif”,
-padding: “24px”,
+minHeight: "100vh",
+background: "linear-gradient(135deg, #0f1729 0%, #1a2744 50%, #0f1729 100%)",
+display: "flex", alignItems: "center", justifyContent: "center",
+fontFamily: "‘DM Sans’, sans-serif",
+padding: "24px",
 }}>
 <style>{`
 @import url(‘https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap’);
