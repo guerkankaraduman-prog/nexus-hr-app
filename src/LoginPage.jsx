@@ -23,7 +23,7 @@ return (
 minHeight: "100vh",
 background: "linear-gradient(135deg, #0f1729 0%, #1a2744 50%, #0f1729 100%)",
 display: "flex", alignItems: "center", justifyContent: "center",
-fontFamily: "‘DM Sans’, sans-serif",
+fontFamily: "DM Sans, sans-serif",
 padding: "24px",
 }}>
 <style>{`
